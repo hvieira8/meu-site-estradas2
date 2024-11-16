@@ -1,0 +1,184 @@
+/* Resetando estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 10px; /*centralizar*/
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Seções */
+section {
+    padding: 40px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Sobre */
+#sobre {
+    background-color: #8f9887;
+    color: white;
+    text-align: center;
+}
+
+/* Serviços */
+#servicos {
+    background-color: #fff;
+}
+
+.servicos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.servico {
+    width: 30%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Portfólio */
+#portfolio .portfolio-imagens {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#portfolio img {
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Depoimentos */
+#depoimentos {
+    background-color: #f4f4f4;
+}
+
+.depoimento {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.depoimento p {
+    font-style: italic;
+}
+
+.depoimento strong {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Contato */
+#contato {
+    background-color: #8f9887;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+form input, form textarea {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #2e3b4e;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .servicos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servico {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    #portfolio .portfolio-imagens {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #portfolio img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    form input, form textarea {
+        width: 90%;
+    }
+
+}

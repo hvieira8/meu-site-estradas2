@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="imagens/android-chrome-192x192.png" type="image/x-icon">
+    <title>RODOPLAN ENGENHARIA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <!-- Seção de Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>RODOPLAN ENGENHARIA</h1>
+            <img src="imagens/favicon-32x32.png" alt="">
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção de Apresentação -->
+    <section id="sobre">
+        <div class="container">
+            <h2>Construa o Futuro com as Melhores Estradas</h2>
+            <p>Somos uma empresa especializada em engenharia de estradas, oferecendo soluções inovadoras e seguras para a infraestrutura rodoviária.</p>
+        </div>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section id="servicos">
+        <div class="container">
+            <h2>Serviços</h2>
+            <div class="servicos">
+                <div class="servico">
+                    <h3>Construção de Estradas</h3>
+                    <p>Projetamos e executamos a construção de estradas com alta qualidade e eficiência.</p>
+                </div>
+                <div class="servico">
+                    <h3>Manutenção e Reparos</h3>
+                    <p>Realizamos manutenção e reparos em estradas para garantir segurança e durabilidade.</p>
+                </div>
+                <div class="servico">
+                    <h3>Projetos de Infraestrutura</h3>
+                    <p>Desenvolvemos projetos completos para novas rodovias e melhorias de infraestruturas existentes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Portfólio -->
+    <section id="portfolio">
+        <div class="container">
+            <h2>Nosso Portfólio</h2>
+            <div class="portfolio-imagens">
+                <img src="imagens/rodovia-bauru-marilia-104-1708698831.webp" alt="Estrada 1">
+                <img src="imagens/PLANTA ESTRADA TAM248_rev_28-06-2021_page-0003.webp" alt="Estrada 2">
+                <img src="imagens/rodovia_pe-166.png" alt="Estrada 3">
+            </div>
+        </div>
+    </section>
+
+<script>
+    $('.galeria-imagens').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true,
+        arrows: true,
+    });
+</script>
+
+    <!-- Seção de Depoimentos -->
+    <section id="depoimentos">
+        <div class="container">
+            <h2>O que nossos clientes dizem</h2>
+            <div class="depoimento">
+                <p>"A engenharia de estradas fez um trabalho excelente em nossa rodovia. As estradas estão mais seguras e duráveis!"</p>
+                <p><strong>João Silva, Prefeitura de São Paulo</strong></p>
+            </div>
+            <div class="depoimento">
+                <p>"Excelente trabalho de construção e manutenção. A equipe é muito profissional!"</p>
+                <p><strong>Maria Oliveira, Governo Estadual</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Tem interesse em nosso serviço? Entre em contato conosco hoje mesmo!</p>
+            <form action="#" method="POST">
+                <input type="text" name="nome" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu E-mail" required>
+                <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Rodoplan Engenharia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
